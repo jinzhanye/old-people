@@ -1,0 +1,11 @@
+<!--components/date/index.wxml-->
+<view class="date">
+  <view class="left">
+    <text>No.</text>
+    <text class="day">{{ day }}</text>
+  </view>
+  <view class="right">
+    <text>{{ month }}</text>
+    <view>{{ year }}</view>
+  </view>
+</view>

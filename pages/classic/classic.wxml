@@ -1,6 +1,7 @@
 <!--pages/classic/classic.wxml-->
 <view class="classic">
-<view class="header-container">
-No.
-</view>
+  <view class="header">
+    <date-cmp/>
+    <view>这是Like</view>
+  </view>
 </view>

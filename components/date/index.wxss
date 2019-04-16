@@ -1,0 +1,20 @@
+/* components/date/index.wxss */
+.date {
+  display: flex;
+}
+
+.left {
+  border-right: 2px solid #333;
+  padding-right: 8px;
+  margin-right: 8px;
+}
+
+.day {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.right{
+  padding-top: 4px;
+  font-size: 12px;
+}

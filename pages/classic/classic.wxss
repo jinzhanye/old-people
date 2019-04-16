@@ -1,1 +1,11 @@
 /* pages/classic/classic.wxss */
+.classic {
+
+}
+
+.header {
+  border: 1px solid #eee;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
