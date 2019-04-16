@@ -25,7 +25,15 @@ Page({
     });
   },
 
-  onLike() {
+  onLike(evt) {
+    const { like, count } = evt.detail;
+    this.setData({
+      periodical: Object.assign({}, this.data.periodical, {
+        favNums: like ? count - 1 : count + 1,
+        likeStatus: !like,
+      }),
+    });
+
     wx.showToast({
       title: 'update success',
       icon: 'success',

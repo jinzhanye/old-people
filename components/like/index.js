@@ -37,14 +37,7 @@ Component({
    */
   methods: {
     toggle() {
-      const { like, count } = this.properties;
-      this.setData({
-        count: like ? count - 1 : count + 1,
-        like: !like,
-      });
-      this.triggerEvent('like', {
-        behavior: this.properties.like ? 'like' : 'cancel',
-      });
+      this.triggerEvent('like', this.properties);
     }
   }
 });
