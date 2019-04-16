@@ -1,7 +1,11 @@
 <!--pages/classic/classic.wxml-->
 <view class="classic">
   <view class="header">
-    <date-cmp/>
-    <like-cmp/>
+    <date-cmp
+      date="{{ periodical.pubDate }}"/>
+    <like-cmp
+      count="{{ periodical.favNums}} "
+      like="{{ periodical.likeStatus }}"
+      bind:like="onLike"/>
   </view>
 </view>

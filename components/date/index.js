@@ -23,8 +23,11 @@ Component({
     day: '',
   },
 
-  lifetimes: {
-    attached() {
+  observers: {
+    date() {
+      if(!this.properties.date){
+        return;
+      }
       const [year, month, day] = this.properties.date.split('-');
       this.setData({
         year,
@@ -33,8 +36,4 @@ Component({
       });
     }
   },
-  /**
-   * 组件的方法列表
-   */
-  methods: {}
 });
