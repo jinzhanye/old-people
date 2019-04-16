@@ -25,12 +25,12 @@ Page({
     });
   },
 
-  onLike(evt) {
-    const { like, count } = evt.detail;
+  onLike() {
+    const { likeStatus, favNums } = this.data.periodical;
     this.setData({
       periodical: Object.assign({}, this.data.periodical, {
-        favNums: like ? count - 1 : count + 1,
-        likeStatus: !like,
+        favNums: likeStatus ? favNums - 1 : favNums + 1,
+        likeStatus: !likeStatus,
       }),
     });
 

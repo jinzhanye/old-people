@@ -37,7 +37,7 @@ Component({
    */
   methods: {
     toggle() {
-      this.triggerEvent('like', this.properties);
+      this.triggerEvent('like');
     }
   }
 });
