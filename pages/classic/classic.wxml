@@ -2,6 +2,6 @@
 <view class="classic">
   <view class="header">
     <date-cmp/>
-    <view>这是Like</view>
+    <like-cmp/>
   </view>
 </view>

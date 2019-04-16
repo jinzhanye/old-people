@@ -1,5 +1,5 @@
 <!--components/date/index.wxml-->
-<view class="date">
+<view class="container">
   <view class="left">
     <text>No.</text>
     <text class="day">{{ day }}</text>

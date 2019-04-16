@@ -1,0 +1,6 @@
+<!--components/like/index.wxml-->
+<view class="container"
+      bind:tap="toggle">
+  <image src="{{ img }}"/>
+  <text>{{ count }}</text>
+</view>

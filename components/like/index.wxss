@@ -1,0 +1,12 @@
+/* components/like/index.wxss */
+.container text{
+  font-size: 12px;
+  color: #bcbcbc;
+  position: relative;
+  top: -10px;
+}
+
+.container image{
+  width: 32rpx;
+  height: 28rpx;
+}

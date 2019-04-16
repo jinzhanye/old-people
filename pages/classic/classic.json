@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "date-cmp": "/components/date/index"
+    "date-cmp": "/components/date/index",
+    "like-cmp": "/components/like/index"
   }
 }

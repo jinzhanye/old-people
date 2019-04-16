@@ -1,5 +1,5 @@
 /* components/date/index.wxss */
-.date {
+.container {
   display: flex;
 }
 
