@@ -8,4 +8,16 @@
       like="{{ periodical.likeStatus }}"
       bind:like="onLike"/>
   </view>
+  <view
+    class="body">
+    <image
+      class="cover"
+      src="/images/cover.png"/>
+    <image
+      class="music-text"
+      src="/images/music-text.png"/>
+    <text>
+      你陪我步入蝉夏 越过城市喧嚣
+    </text>
+  </view>
 </view>

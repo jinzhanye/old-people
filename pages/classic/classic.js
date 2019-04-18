@@ -28,16 +28,18 @@ Page({
   onLike() {
     const { likeStatus, favNums } = this.data.periodical;
     this.setData({
-      periodical: Object.assign({}, this.data.periodical, {
+      periodical: {
+        ...this.data.periodical,
         favNums: likeStatus ? favNums - 1 : favNums + 1,
         likeStatus: !likeStatus,
-      }),
+      },
     });
-
-    wx.showToast({
-      title: 'update success',
-      icon: 'success',
-      duration: 1000,
-    });
+    setTimeout(() => {
+      wx.showToast({
+        title: 'update success',
+        icon: 'success',
+        duration: 1000,
+      });
+    }, 500);
   }
 });

@@ -9,3 +9,31 @@
   display: flex;
   justify-content: space-between;
 }
+
+.body {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.body .cover{
+  width: 400rpx;
+  height: 400rpx;
+  border-radius: 50%;
+}
+
+.body .music-text{
+  position: relative;
+  top: -40rpx;
+  left: -300rpx;
+  width:44rpx;
+  height:127rpx;
+}
+
+.body > text {
+  margin-top: 40px;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
