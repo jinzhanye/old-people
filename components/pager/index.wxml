@@ -5,7 +5,7 @@
     class="navi-icon"
     src="{{ leftImg }}"
     bind:tap="onTapLeft"/>
-  <text>花粥 《纸短情长》</text>
+  <text>{{ title }}</text>
   <image
     class="navi-icon"
     src="{{ rightImg }}"

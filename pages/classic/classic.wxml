@@ -12,12 +12,12 @@
     class="body">
     <image
       class="cover"
-      src="/images/cover.png"/>
+      src="{{ periodical.image }}"/>
     <image
       class="music-text"
       src="/images/music-text.png"/>
     <text>
-      你陪我步入蝉夏 越过城市喧嚣
+      {{ periodical.content }}
     </text>
   </view>
   <view
@@ -26,7 +26,8 @@
     <pager-cmp
       hasPrev="{{ hasPrev }}"
       hasNext="{{ hasNext }}"
-      prev="onPrev"
-      next="onNext"/>
+      title="{{ periodical.title }}"
+      bind:prev="onPrev"
+      bind:next="onNext"/>
   </view>
 </view>

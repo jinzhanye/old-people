@@ -40,6 +40,7 @@ Page({
         likeStatus: !likeStatus,
       },
     });
+
     setTimeout(() => {
       wx.showToast({
         title: 'update success',
@@ -50,7 +51,6 @@ Page({
   },
 
   updatePeriodical(idx) {
-    console.log('updatePeriodical');
     this.setData({
       idx,
       periodical: this.data.periodicals[idx],
@@ -59,23 +59,29 @@ Page({
 
   onPrev() {
     const idx = this.data.idx - 1;
+    this.setData({
+      hasNext: true,
+    });
+
     this.updatePeriodical(idx);
 
     if (idx === 0) {
       this.setData({
         hasPrev: false,
-        hasNext: true,
       });
     }
   },
 
   onNext() {
     const idx = this.data.idx + 1;
+    this.setData({
+      hasPrev: true,
+    });
+
     this.updatePeriodical(idx);
 
     if (idx === this.data.periodicals.length - 1) {
       this.setData({
-        hasPrev: true,
         hasNext: false,
       });
     }
