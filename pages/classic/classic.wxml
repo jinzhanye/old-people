@@ -1,5 +1,5 @@
 <!--pages/classic/classic.wxml-->
-<view class="classic">
+<view class="container">
   <view class="header">
     <date-cmp
       date="{{ periodical.pubDate }}"/>
@@ -19,5 +19,14 @@
     <text>
       你陪我步入蝉夏 越过城市喧嚣
     </text>
+  </view>
+  <view
+    style="margin-top: 32px"
+    class="center">
+    <pager-cmp
+      hasPrev="{{ hasPrev }}"
+      hasNext="{{ hasNext }}"
+      prev="onPrev"
+      next="onNext"/>
   </view>
 </view>

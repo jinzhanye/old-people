@@ -1,13 +1,14 @@
 /* pages/classic/classic.wxss */
-.classic {
-
-}
-
 .header {
   border: 1px solid #eee;
   padding: 10px;
   display: flex;
   justify-content: space-between;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
 }
 
 .body {
@@ -33,7 +34,7 @@
 }
 
 .body > text {
-  margin-top: 40px;
+  margin-top: 20px;
   font-size: 14px;
   letter-spacing: 1px;
 }

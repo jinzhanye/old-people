@@ -1,6 +1,7 @@
 {
   "usingComponents": {
     "date-cmp": "/components/date/index",
-    "like-cmp": "/components/like/index"
+    "like-cmp": "/components/like/index",
+    "pager-cmp": "/components/pager/index"
   }
 }
