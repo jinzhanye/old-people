@@ -1,0 +1,49 @@
+/* pages/detail/detail.wxss */
+.container {
+  background: #ebebeb;
+}
+
+.block-container {
+  background: #fff;
+  padding: 40rpx 20rpx;
+  margin-bottom: 40rpx;
+}
+
+.cover-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cover-container .cover{
+  margin-bottom: 40rpx;
+}
+
+.h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 40rpx;
+}
+
+.comments {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.comment {
+  font-size: 16px;
+  border-radius: 4px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  padding: 4px;
+}
+
+.count {
+  color: #cfcfcf;
+  font-size: 14px;
+}
+
+.introduction{
+  text-indent: 20px;
+}
