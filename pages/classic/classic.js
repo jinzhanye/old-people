@@ -1,19 +1,18 @@
 // pages/classic/classic.js
-import { ClassicModel } from '../../models/classic.js'
-
+import {ClassicModel} from '../../models/classic.js'
+//
 const classicModel = new ClassicModel();
 
 Page({
-
   /**
    * 页面的初始数据
    */
   data: {
     periodicals: [],
+    idx: 0,
     periodical: {},
     hasPrev: false,
     hasNext: false,
-    idx: 0,
   },
 
   /**
@@ -32,13 +31,16 @@ Page({
   },
 
   onLike() {
-    const { likeStatus, favNums } = this.data.periodical;
+    const { periodicals, idx, periodical } = this.data;
+    const { likeStatus, favNums } = periodical;
+    periodicals[idx] = {
+      ...this.data.periodical,
+      favNums: likeStatus ? favNums - 1 : favNums + 1,
+      likeStatus: !likeStatus,
+    };
+
     this.setData({
-      periodical: {
-        ...this.data.periodical,
-        favNums: likeStatus ? favNums - 1 : favNums + 1,
-        likeStatus: !likeStatus,
-      },
+      periodical: periodicals[idx],
     });
 
     setTimeout(() => {

@@ -10,9 +10,12 @@
   </view>
   <view
     class="body">
-    <image
-      class="cover"
-      src="{{ periodical.image }}"/>
+    <navigator
+      url="/pages/detail/detail?id=3">
+      <image
+        class="cover"
+        src="{{ periodical.image }}"/>
+    </navigator>
     <image
       class="music-text"
       src="/images/music-text.png"/>

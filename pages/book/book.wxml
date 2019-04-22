@@ -1,9 +1,3 @@
 <view>
-  <template name="msgItem">
-    <view bind:tap="testTap">
-      <text>{{index}}: {{msg}}</text>
-      <text>Time: {{time}}</text>
-    </view>
-  </template>
-  <template is="msgItem" data="{{...item}}"/>
+  I am book page
 </view>
