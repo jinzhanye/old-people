@@ -1,4 +1,5 @@
 <!--pages/detail/detail.wxml-->
+<wxs src="../../utils/filter.wxs" module="util"/>
 <view
   class="container">
   <view
@@ -8,6 +9,7 @@
       src="{{ movie.image }}"/>
     <view
       style="color: #727272;">{{ movie.author }}</view>
+    <text>上次阅读 {{util.formatDate('23123123')}}</text>
   </view>
 
   <view class="block-container">

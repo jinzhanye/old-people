@@ -1,0 +1,12 @@
+// wxs 与 es5 语法相似
+var formatDate = function(text){
+  if(!text){
+    return '';
+  }
+  // 假装格式化了时间
+  return '2019-04-27';
+}
+
+module.exports = {
+  formatDate: formatDate
+}
