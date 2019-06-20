@@ -16,6 +16,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    // 从 url 中 获取 id 参数
     const { id } = options;
     classicModel.getOne(id, (data) => {
       data.comments = data.comments.map((item) => {

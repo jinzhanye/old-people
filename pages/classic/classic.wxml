@@ -27,6 +27,7 @@
     style="margin-top: 32px"
     class="center">
     <pager-cmp
+      example-outer-class="custom-pager"
       hasPrev="{{ hasPrev }}"
       hasNext="{{ hasNext }}"
       title="{{ periodical.title }}"

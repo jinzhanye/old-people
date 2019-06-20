@@ -1,6 +1,6 @@
 <!--components/pager/index.wxml-->
 <view
-  class="container">
+  class="container example-outer-class">
   <image
     class="navi-icon"
     src="{{ leftImg }}"

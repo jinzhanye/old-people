@@ -11,6 +11,11 @@
   justify-content: center;
 }
 
+/*覆盖 pager 组件样式*/
+.container .custom-pager {
+  background-color: #f7f7f7;
+}
+
 .body {
   padding-top: 40px;
   display: flex;

@@ -2,7 +2,7 @@
 .container{
   width:600rpx;
   height:80rpx;
-  background-color: #f7f7f7;
+  background-color: red;
   border-radius:2px;
   display:inline-flex;
   flex-direction: row;

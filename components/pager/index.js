@@ -7,6 +7,7 @@ const RIGHT_IMG = 'images/triangle@right.png';
 const RIGHT_IMG_DIS = 'images/triangle.dis@right.png';
 
 Component({
+  externalClasses: ['example-outer-class'],
   /**
    * 组件的属性列表
    */
